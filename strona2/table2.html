@@ -1,0 +1,138 @@
+<<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 2S</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+    
+        .nav-buttons {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 10;
+        }
+
+        .nav-buttons button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 0 10px;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #45a049;
+        }
+
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            padding-top: 30px; 
+        }
+
+        .section {
+            flex: 1;
+            display: flex;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        
+        .section-1 .box {
+            width: 100%;
+            border: 1px solid #000;
+            background-color: yellow;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+     
+        .section-2 .box {
+            width: 50%;
+            border: 1px solid #000;
+            background-color: greenyellow;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        
+        .section-3 .box {
+            width: 33.33%;
+            border: 1px solid #000;
+            background-color: green;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+       
+        .section-4 .box {
+            width: 25%;
+            border: 1px solid #000;
+            background-color: aqua;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-buttons">
+        <button><a href="index.html"><h4>Formularz</h4></a></button>
+        <button><a href="table1.html"><h4>Tabela 1</h4></a></button>
+        <button><a href="gallery.html"><h4>Galeria</h4></a></button>
+    </div>
+    <div class="container">
+        
+  
+        <div class="section section-1">
+            <div class="box">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</div>
+        </div>
+        
+      
+        <div class="section section-2">
+            <div class="box">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</div>
+            <div class="box">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</div>
+        </div>
+    
+        <div class="section section-3">
+            <div class="box">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</div>
+            <div class="box">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</div>
+            <div class="box">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</div>
+        </div>
+        
+      
+        <div class="section section-4">
+            <div class="box">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</div>
+            <div class="box">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</div>
+            <div class="box">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</div>
+            <div class="box">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</div>
+        </div>
+    </div>
+</body>
+</html>

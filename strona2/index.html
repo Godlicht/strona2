@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 20px;
+
+        }
+
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .nav-buttons button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #45a049;
+        }
+
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+        }
+
+       
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        form label {
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-top: 15px;
+        }
+
+        form input[type="text"],
+        form input[type="date"],
+        form input[type="tel"],
+        form input[type="email"],
+        form input[type="password"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        form .gender {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 5px;
+}
+        form .driving-license {
+            margin-top: 5px;
+        }
+
+        form input[type="radio"],
+        form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        form button[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-buttons">
+        <button><h4><a href="table1.html">Tabela 1</a></h4></button>
+        <button><h4><a href="table2.html">Tabela 2</a></h4></button>
+        <button><h4><a href="gallery.html">Galeria</a></h4></button>
+    </div>
+
+    <form>
+        <label>Imię</label>
+        <input type="text" required>
+
+        <label>Nazwisko</label>
+        <input type="text" required>
+
+        <label>Ulica</label>
+        <input type="text" required>
+
+        <label>Drzwi</label>
+        <input type="text" required>
+
+        <label>Mieszkanie</label>
+        <input type="text" required>
+
+        <label>Miasto</label>
+        <input type="text" required>
+
+        <label>Data urodzenia:</label>
+        <input type="date" required>
+
+        <label>Numer telefonu:</label>
+        <input type="tel" required>
+
+        <label>Adres e-mail:</label>
+        <input type="email" required>
+
+        <label>Płeć:</label>
+        <div class="gender">
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Mężczyzna</label>
+
+            <input type="radio" id="female" name="gender">
+            <label for="female">Kobieta</label>
+        </div>
+
+        <label>Prawo jazdy:</label>
+        <div class="driving-license">
+            <input type="checkbox" id="driving-license">
+            <label for="driving-license">Posiadam prawo jazdy</label>
+        </div>
+
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" required>
+
+        <label for="comments">Uwagi:</label>
+        <textarea rows="4" id="comments"></textarea>
+
+        <button type="submit">Prześlij</button>
+    </form>
+</body>
+</html>

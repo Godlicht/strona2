@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body, html {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+       
+        .nav-buttons {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 10;
+        }
+
+        .nav-buttons button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 0 10px;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #45a049;
+        }
+
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+        }
+
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 100vw;
+            height: 100vh;
+            gap: 5px; 
+            padding-top: 60px; 
+        }
+
+      
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+       
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+       
+        .caption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            font-size: 1em;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-buttons">
+        <button><a href="index.html"><h4>Formularz</h4></a></button>
+        <button><h4><a href="table1.html">Tabela 1</a></h4></button>
+        <button><h4><a href="table2.html">Tabela 2</a></h4></button>
+    </div>
+    <div class="gallery">
+      
+        <div class="gallery-item">
+            <img src="https://images8.alphacoders.com/133/thumb-1920-1336966.jpeg" alt="Zdjęcie 1">
+            <div class="caption">Zdjęcie 1</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images8.alphacoders.com/133/thumb-1920-1336966.jpeg" alt="Zdjęcie 2">
+            <div class="caption">Zdjęcie 2</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images8.alphacoders.com/133/thumb-1920-1336966.jpeg" alt="Zdjęcie 3">
+            <div class="caption">Zdjęcie 3</div>
+        </div>
+
+        
+        <div class="gallery-item">
+            <img src="https://images8.alphacoders.com/133/thumb-1920-1336966.jpeg" alt="Zdjęcie 4">
+            <div class="caption">Zdjęcie 4</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images8.alphacoders.com/133/thumb-1920-1336966.jpeg" alt="Zdjęcie 5">
+            <div class="caption">Zdjęcie 5</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images8.alphacoders.com/133/thumb-1920-1336966.jpeg" alt="Zdjęcie 6">
+            <div class="caption">Zdjęcie 6</div>
+        </div>
+
+       
+        <div class="gallery-item">
+            <img src="https://images8.alphacoders.com/133/thumb-1920-1336966.jpeg" alt="Zdjęcie 7">
+            <div class="caption">Zdjęcie 7</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images8.alphacoders.com/133/thumb-1920-1336966.jpeg" alt="Zdjęcie 8">
+            <div class="caption">Zdjęcie 8</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images8.alphacoders.com/133/thumb-1920-1336966.jpeg" alt="Zdjęcie 9">
+            <div class="caption">Zdjęcie 9</div>
+        </div>
+    </div>
+</body>
+</html>
